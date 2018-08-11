@@ -1,0 +1,52 @@
+name: hub-maker.com
+
+sass:
+  sass_dir: css
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+
+excerpt_separator: <!--break-->
+
+navigation:
+  - title: Workshop
+    url: /workshop/
+  - title: Semester
+    url: /semester/
+  - title: Enterprise
+    url: /enterprise/
+
+collections:
+  trainings:
+    output: true
+
+title: Hub Maker
+author: Wild Tree Tech
+description: JupyterHubs for every occasion
+
+url: https://hub-maker.com
+logo: /images/logo.svg
+
+twitter:
+  username: wildtreetech
+
+exclude: [vendor]
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image:
+        twitter: /images/logo.svg
+        facebook: /images/logo.svg
+        height: 144
+        width: 144
