@@ -39,6 +39,7 @@ twitter:
   username: wildtreetech
 
 exclude: [vendor]
+include: [_redirects]
 
 defaults:
   -
