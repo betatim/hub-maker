@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+https://hubhero.netlify.com/* https://hubhero.net/:splat 301!
+
+# These extra rules are required because HTTPS is not forced
+http://hubhero.netlify.com/* https://hubhero.net/:splat 301!
