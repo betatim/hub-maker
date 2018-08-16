@@ -1,4 +1,4 @@
-name: hub-maker.com
+name: www.hubhero.net
 
 sass:
   sass_dir: css
@@ -28,11 +28,11 @@ collections:
   trainings:
     output: true
 
-title: Hub Maker
+title: Hub Hero
 author: Wild Tree Tech
 description: JupyterHubs for every occasion
 
-url: https://hub-maker.com
+url: https://www.hubhero.net
 logo: /images/logo.svg
 
 twitter:

@@ -1,5 +1,5 @@
-# wildtreetech.github.io
-Wild Tree Tech homepage.
+# Hub Hero
+The https://hubhero.net homepage.
 
 
 ## Run jekyll locally
