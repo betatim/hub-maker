@@ -17,10 +17,12 @@ kramdown:
 excerpt_separator: <!--break-->
 
 navigation:
-  - title: Workshop
-    url: /workshop/
-  - title: Semester
-    url: /semester/
+  #- title: Use cases
+  #  url: /use-cases/
+  - title: Community install
+    url: /community/
+  - title: Hosted solutions
+    url: /hosted/
   - title: Enterprise
     url: /enterprise/
 
@@ -30,7 +32,7 @@ collections:
 
 title: Hub Hero
 author: Wild Tree Tech
-description: JupyterHubs for every occasion
+description: Hosted multi user Jupyter notebooks
 
 url: https://www.hubhero.net
 logo: /images/logo.svg
