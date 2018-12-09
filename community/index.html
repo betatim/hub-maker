@@ -26,7 +26,7 @@ title: The community install
             The community install gives you a state of the art JupyterHub server that lets you focus on teaching instead of being tech support for your students. As part of this package we will configure your JupyterHub with HTTPS encryption, a simple user account management solution and we will advise you on the appropriate computing power for your course.
           </p>
           <p>
-            This offer is ideal for courses up to about 30 students and teachers who are comfortable following guides that use the command-line to perform occasional administrative tasks. IF you have more questions please email <a href="mailto:hello@hubhero.net">hello@hubhero.net</a> or <a href="#">order your community install</a>.
+            This offer is ideal for courses up to about 30 students and teachers who are comfortable following guides that use the command-line to perform occasional administrative tasks. If you have more questions please email <a href="mailto:hello@hubhero.net">hello@hubhero.net</a> or <a href="#ordernow">order your community install now</a>.
         </div>
       </div>
       <div class="row content-section split-section separated">
@@ -51,22 +51,22 @@ title: The community install
           </p>
         </div>
       </div>
-      <div class="row content-section split-section separated">
+      <div id="ordernow" class="row content-section split-section separated">
         <div class="col-md-4">
           <h3>Place order</h3>
         </div>
         <div class="col-md-8">
           <p>
-            Place your order for a community install JupyterHub ($150). We will confirm your order and send you a guide for launching a Digital Ocean instance.
+            Order your community install JupyterHub ($150) now. Once you place your order we will confirm it by email, set up invoicing and send you a guide for preparing your machine. Once you send us the login details of your machine your hub will usually be ready on the same or next business day.
           </p>
           <form name="communityInstall" method="POST" netlify>
             <div class="form-group">
-              <label for="email">Your email address:</label>
+              <label for="email">Your email address</label>
               <input type="email" name="email" class="form-control" id="email" placeholder="yourname@example.com" aria-describedby="emailHelp" required>
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
-              <label for="classSize">Size of your class:</label>
+              <label for="classSize">Size of your class</label>
               <select class="form-control" name="classSize" id="classSize" required>
                 <option>10</option>
                 <option>30</option>
@@ -75,13 +75,13 @@ title: The community install
             </div>
             <div class="form-group">
               <label for="comments">Comments and questions</label>
-              <textarea class="form-control" name="comments" id="comments" rows="10"></textarea>
+              <textarea class="form-control" name="comments" id="comments" rows="7"></textarea>
             </div>
             <div class="form-group">
               <div class="form-check">
                 <input class="form-check-input" name="DOreferral" type="checkbox" value="DO" id="doReferral">
                 <label class="form-check-label" for="doReferral">
-                  Refer me to Digital Ocean ($100 free credit).
+                  Refer me to Digital Ocean ($100 free hosting credit).
                 </label>
               </div>
             </div>

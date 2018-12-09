@@ -29,7 +29,7 @@ title: Hosted JupyterHubs
             Hub Hero provides JupyterHubs for teaching professionals. No matter if your students are professionals, high school or university students. Students can use the platform at anytime, from anywhere. Based on the widely used, popular and open-source <a href="https://jupyter.org">Jupyter</a> technology all your students need is a web browser. While you could set it up yourself, we offer you peace of mind and our experience in operating these powerful tools reliably.
           </p>
           <p>
-            Hosted JupyterHubs are ideal for those who need peace of mind. For details please email <a href="mailto:hello@hubhero.net">hello@hubhero.net</a>.
+            Hosted JupyterHubs are ideal for those who need peace of mind when running large courses. If you have more questions please email <a href="mailto:hello@hubhero.net">hello@hubhero.net</a> or <a href="#ordernow">order your hosted JupyterHub now</a>.
         </div>
       </div>
       <div class="row content-section split-section separated justify-content-center">
@@ -174,6 +174,52 @@ title: Hosted JupyterHubs
         </div>
         <div class="col-md-6">
           <p>We would love to hear from you. If you have any questions or want to discuss specific needs for your course send an email to: <a href="mailto:hello@hubhero.net">hello@hubhero.net</a></p>
+        </div>
+      </div>
+      <div id="ordernow" class="row content-section split-section separated">
+        <div class="col-md-4">
+          <h3>Place order</h3>
+        </div>
+        <div class="col-md-8">
+          <p>
+            Order your hosted JupyterHub now. Once you place your order we will confirm it by email and set up invoicing.
+          </p>
+          <form name="hostedInstall" method="POST" netlify>
+            <div class="form-group">
+              <label for="email">Your email address</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="yourname@example.com" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="classSize">Size of your class</label>
+              <select class="form-control" name="classSize" id="classSize" required>
+                <option>10 ($250/month)</option>
+                <option>30 ($250/month)</option>
+                <option>50 (custom offer)</option>
+                <option>100 (custom offer)</option>
+                <option>150 (custom offer)</option>
+                <option>200 (custom offer)</option>
+                <option>300 (custom offer)</option>
+                <option>500 (custom offer)</option>
+                <option>750 (custom offer)</option>
+                <option>1000 (custom offer)</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comments">Comments and questions</label>
+              <textarea class="form-control" name="comments" id="comments" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" name="ContactMe" type="checkbox" value="contactme" id="doContact" required>
+                <label class="form-check-label" for="doContact">
+                  I agree to be contacted by email for this transaction.
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn custom-button send-button">Place order now</button>
+          </form>
         </div>
       </div>
     </div>
