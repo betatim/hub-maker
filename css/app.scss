@@ -157,26 +157,6 @@ blockquote {
   }
 }
 
-form {
-  input, textarea {
-    margin: 0 0 20px 0;
-    border-width: 0;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    width: 100%;
-  }
-
-  input, textarea, button {
-    &:focus, &:active {
-      outline: none;
-    }
-  }
-
-  textarea {
-    resize: none;
-  }
-}
-
 pre.highlight {
   border: none;
   padding: 20px;
