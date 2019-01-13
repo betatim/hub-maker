@@ -1,0 +1,92 @@
+---
+layout: default
+title: The community install
+---
+
+<div class="primary-banner">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-md-12">
+        <h2>Self-hosted</h2>
+        <p>Our most popular option: self-hosted. This options is ideal for courses of up to 30 students as they do not require complex cloud setups or ongoing maintenance. For a flat one-time fee of $150 we will install a professionally configured multi-user Jupyter notebook server on a server you already own or one you rent from a cloud provider. Please note that you will have to pay for the hosting and that this option is completely self-support after the initial install. Curious about what it will look like or not quite sure this is for you? <a href="/trial">Start your free trial</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="main-section">
+  <div class="row justify-content-center">
+    <div class="col-lg-9 col-md-12">
+      <div class="row content-section split-section separated">
+        <div class="col-md-4">
+          <h3>Hosting</h3>
+        </div>
+        <div class="col-md-8">
+          <p>
+            You will need to obtain a machine that we can install your JupyterHub on. This can be hardware you already have or a virtual machine you rent from a cloud provider. We recommend <a href="https://www.digitalocean.com/">Digital Ocean</a> as a simple and reliable cloud hoster available in a jurisdictions near you (important for data protection). Reach out to <a href="mailto:tim@hubhero.net">tim@hubhero.net</a> if you'd like to be referred to Digital Ocean and receive $100 in free credits.
+          </p>
+          <p>
+            For us to be able to do our work the machine has to be accessible by ssh over the internet and run <a href="https://www.ubuntu.com/download/server">Ubuntu 18.04</a>.
+          </p>
+        </div>
+      </div>
+      <div class="row content-section split-section separated">
+        <div class="col-md-4">
+          <h3>Support</h3>
+        </div>
+        <div class="col-md-8">
+          <p>This option is completely self-support after the initial install. The global Jupyter community is excellent at helping newcomers and once correctly configured a JupyterHub requires little maintenance. Should you ever get stuck or need an additional pair of hands please reach out to <a href="mailto:tim@hubhero.net">tim@hubhero.net</a> to discuss additional support options based on a preferred hourly rate for existing customers.
+          </p>
+        </div>
+      </div>
+      <div id="ordernow" class="row content-section split-section separated">
+        <div class="col-md-4">
+          <h3>Place your order</h3>
+        </div>
+        <div class="col-md-8">
+          <p>
+            Order your self-hosted JupyterHub ($150) now. We will confirm your order by email and set up invoicing. Afterwards we will send you a guide for preparing your machine or help you pick a cloud provider. Once you send us the login details of your machine your hub will usually be ready on the same business day.
+          </p>
+          <form name="selfHosted" method="POST" netlify>
+            <div class="form-group">
+              <label for="email">Your email address</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="yourname@example.com" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="classSize">Size of your class</label>
+              <select class="form-control" name="classSize" id="classSize" required>
+                <option>about 10</option>
+                <option>about 30</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comments">Comments and questions</label>
+              <textarea class="form-control" name="comments" id="comments" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" name="DOreferral" type="checkbox" value="DO" id="doReferral">
+                <label class="form-check-label" for="doReferral">
+                  Refer me to Digital Ocean ($100 free hosting credit).
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" name="ContactMe" type="checkbox" value="contactme" id="doContact" required>
+                <label class="form-check-label" for="doContact">
+                  I agree to be contacted by email for this transaction.
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn custom-button send-button">Place order now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include enterprise_contact_banner.html %}

@@ -1,0 +1,42 @@
+---
+layout: default
+title: Features
+---
+
+<div class="primary-banner">
+  <div class="container">
+    <div class="row justify-content-center content-section">
+      <div class="col-lg-9 col-md-12">
+        <h2>Free trial</h2>
+        <p>Curious about what it all looks like or not quite sure this is for you? Try it out for free for 10 days. We will email you your access details for a three person JupyterHub running on a server with 1CPU and 2GB of memory. No tricks.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center content-section">
+      <div id="ordernow" class="col-lg-9 col-md-12">
+        <form name="freeTrial" method="POST" netlify>
+          <div class="form-group">
+            <label for="email">Your email address</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="yourname@example.com" aria-describedby="emailHelp" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="comments">Comments and questions</label>
+            <textarea class="form-control" name="comments" id="comments" rows="7"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" name="ContactMe" type="checkbox" value="contactme" id="doContact" required>
+              <label class="form-check-label" for="doContact">
+                I agree to be contacted by email for this transaction.
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn custom-button send-button">Start your 10 day trial</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include workshop_contact_banner.html %}

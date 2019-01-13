@@ -1,0 +1,140 @@
+---
+layout: default
+title: Features
+---
+
+<div class="primary-banner">
+  <div class="container">
+    <div class="row justify-content-center content-section">
+      <div class="col-lg-9 col-md-12">
+        <h2>Pricing</h2>
+        <p>We offer three different tiers. The most popular option is our self-managed offer: for a flat one time fee we install JupyterHub for you on a server you rent or own. For more demanding courses we offer hosted solutions. Finally, our enterprise solution is a good fit for those who want to scale JupyterHub based courses to their whole organisation.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="main-section">
+  <div class="row justify-content-center">
+    <div class="col-lg-9 col-md-12">
+      <div class="row content-section split-section separated justify-content-center">
+        <table class="table table-sm table-responsive-sm">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Self-Managed</th>
+              <th scope="col">Hosted</th>
+              <th scope="col">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Target audience</th>
+              <td>Individual teachers</td>
+              <td>Department heads</td>
+              <td>Whole universities</td>
+            </tr>
+            <tr>
+              <th scope="row">Hosting</th>
+              <td>your server (*)</td>
+              <td>public cloud</td>
+              <td>your servers/public cloud</td>
+            </tr>
+            <tr>
+              <th scope="row">Support</th>
+              <td>❌</td>
+              <td>Next business day email</td>
+              <td>Negotiable</td>
+            </tr>
+            <tr>
+              <th scope="row">Updates</th>
+              <td>❌</td>
+              <td>✅</td>
+              <td>Negotiable</td>
+            </tr>
+            <tr>
+              <th scope="row">Class sizes</th>
+              <td>up to 30</td>
+              <td>up to 100</td>
+              <td>multiple classes</td>
+            </tr>
+            <tr>
+              <th scope="row">Price</th>
+              <td>$150</td>
+              <td>from $250/month</td>
+              <td>Negotiable</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><a href="/trial">Start free trial</a></td>
+              <td><a href="/trial">Start free trial</a></td>
+              <td><a href="mailto:tim@hubhero.net">Contact Tim</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row content-section split-section separated">
+        <div class="col-md-4">
+          <h3>Hosting</h3>
+        </div>
+        <div class="col-md-8">
+          <p>
+            Please note that for the "self-hosted" option you will have to pay for the hosting. Part of the self-hosted offer is selecting an appropriately sized machine and recommending a hoster if you do not have one. We currently work with <a href="https://cloud.google.com/">Google Cloud</a> and <a href="https://www.digitalocean.com/">Digital Ocean</a>. They are well known and reputable partners with data centers in the EU and USA.
+          </p>
+        </div>
+      </div>
+      <div id="ordernow" class="row content-section split-section separated">
+        <div class="col-md-4">
+          <h3>Place order</h3>
+        </div>
+        <div class="col-md-8">
+          <p>
+            Order your JupyterHub now. Once you place your order we will confirm it by email and setup payment.
+          </p>
+          <form name="hostedInstall" method="POST" netlify>
+            <div class="form-group">
+              <label for="email">Your email address</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="yourname@example.com" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="classSize">Hosting option and class size</label>
+              <select class="form-control" name="classSize" id="classSize" required>
+                <option>self-hosted ($150 one time)</option>
+                <option>hosted, <20 students ($250/month)</option>
+                <option>hosted, <30 students ($410/month)</option>
+                <option>hosted, about 50 students (custom offer)</option>
+                <option>hosted, <100 students (custom offer)</option>
+                <option>hosted, over 100 students (custom offer)</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comments">Comments and questions</label>
+              <textarea class="form-control" name="comments" id="comments" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" name="referToDO" type="checkbox" value="digitalocean" id="doContact" required>
+                <label class="form-check-label" for="doContact">
+                   Refer me to Digital Ocean for $100 free hosting credit.
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" name="ContactMe" type="checkbox" value="contactme" id="contactMe" required>
+                <label class="form-check-label" for="contactMe">
+                  I agree to be contacted by email for this transaction.
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn custom-button send-button">Place order now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include workshop_contact_banner.html %}
