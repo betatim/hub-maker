@@ -17,14 +17,12 @@ kramdown:
 excerpt_separator: <!--break-->
 
 navigation:
-  #- title: Use cases
-  #  url: /use-cases/
-  - title: Community install
-    url: /community/
-  - title: Hosted solutions
-    url: /hosted/
-  - title: Enterprise
-    url: /enterprise/
+  - title: Features
+    url: /features/
+  - title: Pricing
+    url: /pricing/
+  - title: Free trial
+    url: /trial/
 
 collections:
   trainings:
